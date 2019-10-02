@@ -1,7 +1,5 @@
 
-
 let getRndInt = (min, max) => Math.floor(Math.random() * (max - min)) + min;
-
 
 let playerPlay = () => {
     
@@ -11,7 +9,6 @@ let playerPlay = () => {
     
 }
 
-
 function computerPlay() {
     
     let choices = ['rock', 'paper', 'scissors'];
@@ -20,7 +17,6 @@ function computerPlay() {
 
     return choices[number];
 }
-
 
 function playRound(player, computer) {
 
@@ -44,9 +40,9 @@ const playerSelection = playerPlay();
 const computerSelection = computerPlay();
 
 
-function game() {
+function runGame() {
     
     console.log(playRound(playerSelection, computerSelection));
 }
 
-game()
+runGame()
